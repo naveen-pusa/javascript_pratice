@@ -138,13 +138,13 @@
     // keydown
     // keypress
 
-//  function key() {
-//     let key=document.getElementById('text')
-//     key.style.background='red'
-//      key.style.background='blue'
-//     console.log(key);
+ function key() {
+    let key=document.getElementById('text')
+    key.style.background='red'
+     key.style.background='blue'
+    console.log(key);
     
-//  }   
+ }   
 
 // let color =['red', 'green','pink','black', 'pink']
 // function changeColor(event) {

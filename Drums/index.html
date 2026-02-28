@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+        body{
+            margin: 20PX;
+            display: grid;
+            align-items: center;
+            height: 94vh;
+            height: 50px auto;
+            background-color: aquamarine;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZJj8orXRAOh8rxf-8knq2xcZDZWRy8BrnQ&s");
+            background-size: cover;
+        }
+
+        .continer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .music{
+            border: 1px solid black;
+            width: 150px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: deeppink;
+            box-shadow: 5px 5px 5px 5px mediumpurple;
+        }
+    </STYle>
+</head>
+<body>
+    <!-- <img src="./music/rings_message.mp3" alt=""> -->
+    
+    <audio src=""></audio>
+<center> <h1 style="color:blueviolet; font-weight: 800;">piano keyboard</h1></center>
+    <div class="continer">
+        <div class="music" onclick="play('a')" >A</div>
+        <div class="music" onclick="play('b')" >B</div>
+       <div class="music"  onclick="play('c')" >C</div>
+        <div class="music" onclick="play('d')" >D</div>
+        <div class="music" onclick="play('e')" >E</div>
+        <div class="music" onclick="play('f')" >F</div>
+        <div class="music" onclick="play('g')" >G</div>
+        <div class="music" onclick="play('h')" >H</div>
+        <div class="music" onclick="play('i')" >I</div>
+         <!-- <img style="border-radius: 10px;  height: 400px; margin-left: 400px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZJj8orXRAOh8rxf-8knq2xcZDZWRy8BrnQ&s" alt=""> -->
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
