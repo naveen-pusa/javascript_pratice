@@ -28,31 +28,36 @@
 // Example 2:
 
 let iteams =[
-{apps:'Flipkart'   ,image:'https://i.pinimg.com/736x/aa/70/8d/aa708d1f97a04f6f5a208213f89e1e67.jpg',description:'Hi this is flipkart'},
-{apps:'Meesho'     ,image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7lC5gUNY4nkp4TakjlxCKh8W0HCD-qUcGJw&s',description:'Hi this is Meesho'},
-{apps:'Myntra'     ,image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOoY11h2GyOPEShtftZtV9kUg3b6B_FUthIA&s',description:'Hi this is Myntra'},
-{apps:'Ajio'       ,image:'https://i0.wp.com/blog.ajio.com/wp-content/uploads/2025/04/Ajio-logo.png?w=1060&ssl=1',description:'Hi this is Ajio'},
-{apps:'Amazon'     ,image:'https://thumbs.dreamstime.com/b/icons-sample-psost-setting-428651102.jpg',description:'Hi this is Amazon'},
+{apps:'Flipkart',id:1   ,image:'https://i.pinimg.com/736x/aa/70/8d/aa708d1f97a04f6f5a208213f89e1e67.jpg',description:'Hi this is flipkart'},
+{apps:'Meesho'  ,id:2   ,image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7lC5gUNY4nkp4TakjlxCKh8W0HCD-qUcGJw&s',description:'Hi this is Meesho'},
+{apps:'Myntra'  ,id:3   ,image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOoY11h2GyOPEShtftZtV9kUg3b6B_FUthIA&s',description:'Hi this is Myntra'},
+{apps:'Ajio'    ,id:4   ,image:'https://i0.wp.com/blog.ajio.com/wp-content/uploads/2025/04/Ajio-logo.png?w=1060&ssl=1',description:'Hi this is Ajio'},
+{apps:'Amazon'  ,id:5   ,image:'https://thumbs.dreamstime.com/b/icons-sample-psost-setting-428651102.jpg',description:'Hi this is Amazon'},
 ]
 
 let container = document.getElementById('container')
 
-iteams.forEach(products =>{
-    container.innerHTML+=`
-    <div id="cards">
-    <h1 >${products.apps}</h1>
-        <img src="${products.image}" alt=""></img>
-            <p onclick='changetext(this)'>${products.description}</p>
-    </div>
-      `
-})
+// iteams.forEach(products =>{
+//     let p =  document.getElementById('p')
+//     container.innerHTML+=`
+//     <div id="cards">
+//     <h1 >${products.apps}</h1>
+//         <img src="${products.image}" alt=""></img>
+//             <p id='p'>${products.description}</p>
+//             <button onClick="changetext(${products.id})">Click</button>
+//     </div>
+//       `
 
-// function changetext(x){
-// let a = iteams.map(x => x.description)
-// a.innerHTML = 'This is only for online shoping'
+// })
+
+
+
+//       function changetext(x){
+//     let a = iteams.find(i => i.id == x)
+//    if (a.id  === iteams.filter(i => i.description)) {
+//         return document.getElementById('p').innerHTML = `${a.apps} product Added`;
+//    }   
+
 // }
 
-function changetext(change){
-    // 'element' is the paragraph that was clicked
-    change.innerText = 'This is only for online shopping'
-}
+
