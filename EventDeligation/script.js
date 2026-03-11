@@ -10,11 +10,16 @@ btn.addEventListener('click',()=>{
    
     if(names.value !=="" && gmail.value !== ""){
 
-    newlist1=document.createElement('li')
-    newlist2=document.createElement('li')
+  let   newlist1=document.createElement('li')
+  let  newlist2=document.createElement('li')
 
-   newlist1.innerHTML = names.value
-   newlist2.innerHTML = gmail.value
+   newlist1.innerHTML = names.value.toUpperCase()
+   newlist2.innerHTML = gmail.value.toUpperCase()
+   
+
+   newlist1.style.color='blue'
+   newlist2.style.color='red'
+
    okay.append(newlist1)
    okay.append(newlist2)
 
