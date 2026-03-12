@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+        #card{
+            height: 450px;
+            width: 330px;
+            border: 1px solid;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 5px 5px 5px 5px blue;
+        }
+        img{
+            height: 250px;
+            width:300px;
+        }
+        button,input{
+            border-color: blue;
+            
+        }
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>   
+<center><h1>products</h1>
+<input type="text" id="search" oninput="change()">
+<a href="">cart <sup id="added"></sup></a>
+</center>
+<div id="container"></div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
