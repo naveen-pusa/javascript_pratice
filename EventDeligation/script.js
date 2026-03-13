@@ -1,3 +1,6 @@
+//EventDeligation:
+
+
 let btn   =  document.getElementById('btn')
 let names = document.getElementById('name')
 let gmail = document.getElementById('gmail')

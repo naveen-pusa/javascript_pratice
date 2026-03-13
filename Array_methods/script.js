@@ -124,3 +124,35 @@ container.innerHTML=phones.join('')
 products.filter(mobiles=>(mobiles.cost)<50000) // we use filter for our requriment we have writen the conduction.
 .map(mobiles=>console.log(mobiles.tittle))// we use forEach method for to print tittle in the products.
 
+
+//some:
+
+//      let num = [100,20,15,2,3,4,5,6,7,8,9,10,12,]
+
+//    let output = num.some(x=>{
+//     console.log(x);
+//     return x < 13
+//    })
+
+//    console.log(output);
+
+
+// every
+
+
+     let num = [3,4,5,6,7,8,9,10,12]
+
+   let output = num.every(x=>{
+    console.log(x);
+    return x <=12
+    
+   })
+let page = document.createElement('h1')
+page.innerHTML=num
+document.body.appendChild(page)
+   console.log(output);
+
+
+
+
+// this methods are in the file function with array methods:

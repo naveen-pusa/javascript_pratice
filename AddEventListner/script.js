@@ -1,7 +1,7 @@
 // 1️⃣ Event Bubbling:
 //==>Event starts from the target element (child) and then moves up to the parent elements.
 //2️⃣ Event Capturing:
-//==>Event starts from the parent element and then goes down to the target element.
+//==>Event starts from the parent element and then goes down to the target element.we have add the ,true at end of the code
 
 // 1️⃣ Event Bubbling code:
 

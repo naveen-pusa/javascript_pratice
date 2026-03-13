@@ -25,7 +25,7 @@ function onlineproducts(data){
           <button onclick='add(${item.id})'>Add to cart</button>
           </div>
 `
-    })
+    }) 
     container.innerHTML = dispay.join('')
 }
 onlineproducts(products)
@@ -40,12 +40,25 @@ onlineproducts(temp)
 }
 
 // using function and find:
-
- function add(item){
-    let temp =products.find(pull =>pull.id == item)
+function add(emty){
+    let temp=products.find(enter=>enter.id==emty)
     cart.push(temp)
-    alert(`${temp.title} is added to the cart`)
     document.getElementById("added").innerHTML=cart.length
-
+    increase()
 }
+
+// reduce:
+//=>acculameter, value this two parameters are used:
+ 
+function increase(){ // (increase should have to called in the above function)
+    let total = cart.reduce((acc,value)=>{
+      return acc+value.cost
+    },0)
+    console.log(total);
+    
+document.getElementById('result').innerHTML= total
+}
+  
+
+// we have to call the increase() in the (find() methods because the iteam added to the cart at tha time the cost also increased)
 
