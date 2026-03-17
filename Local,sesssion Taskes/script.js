@@ -86,7 +86,7 @@ let desc = document.getElementById('desc')
 let btn = document.getElementById('btn')
 let ul = document.getElementById('list')
 
-let notes = JSON.parse(localStorage.getItem('notes'))||[]
+let notes = JSON.parse(localStorage.getItem('notes'))||[];
 
 function products(){
     ul.innerHTML=''
