@@ -33,9 +33,42 @@ let num5 = Math.random()*8
 console.log(num5.toFixed());
 
 //floor:
- let num6 = Math.floor(10)
- console.log(num6);
+let num6 = Math.floor(10)
+console.log(num6);
+
+//ROUND:
+let num7= Math.round(20.4)
+console.log(num7);
+
+//CEIL:
+let num8= Math.ceil(25.1)
+console.log(num8);
+
  
+// Date Objects:
+
+// Types:
+// 1.current date.
+// 2.millisecond.
+// 3.string.
+// 4.component.
+
+// 1.current date.
+
+let today = new Date()
+console.log(today);
+
+let string = new Date("8 27 2026 12:00:00")
+console.log(string);
+
+let millisecond= new Date(234567890)
+console.log(millisecond);
+
+let component = new Date(25,0,7 ,30,0,0)
+console.log(component);
+
+
+
 
 
 
